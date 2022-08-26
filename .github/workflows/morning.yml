@@ -2,7 +2,7 @@ name: morning
 
 on:
   schedule:
-    - cron: '45 2 * * *'  #每天的9点50执行 （国内时间）  
+    - cron: '51 2 * * *'  #每天的9点50执行 （国内时间）  
   workflow_dispatch:
 
 jobs:
