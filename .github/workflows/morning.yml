@@ -2,7 +2,7 @@ name: morning
 
 on:
   schedule:
-    - cron: '51 2 * * *'  #每天的9点50执行 （国内时间）  
+    - cron: '53 2 * * *'  #每天的9点50执行 （国内时间）  
   workflow_dispatch:
 
 jobs:
@@ -22,7 +22,7 @@ jobs:
         with:
           python-version: "3.10"
       - name: sender
-        run: pip install -r ./requirements.txt && python ./main.py
+        run: pip install -r ./requirements.txt && python ./morning.py
 
     env:
       APP_ID: ${{ secrets.APP_ID }}
